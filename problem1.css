@@ -1,0 +1,113 @@
+html,
+body {
+  /*
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;  수평 가운데 정렬 
+  align-items: center;
+  height: 100vh;
+  */
+  html,
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #585858;
+  }
+}
+/*.imgstyle{
+    border-bottom: 1px solid #000000; // 아래 테두리 설정하려고 했는데 안되서 그냥 hr로 넣음
+}*/
+.box {
+  width: 400px;
+  height: 500px;
+  border: solid 1px #000000;
+  background-color: white;
+}
+
+/*
+.form1 {
+  height: 50px;
+  border: solid 1px #000000;
+}
+*/
+.loginstyle1 {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 300px;
+  height: 35px;
+  border: solid 1px #b2adad;
+}
+.loginstyle2 {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.loginstyle3 {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.input1 {
+  width: 300px;
+  height: 30px;
+  border: none;
+}
+
+#input2 {
+  width: 300px;
+  height: 30px;
+  background-color: rgb(64, 172, 64);
+  border: none;
+  border-radius: 5px;
+}
+#button {
+  width: 300px;
+  height: 30px;
+  background-color: rgb(64, 172, 64); /* 버튼 배경 색 */
+  border: none;
+  border-radius: 5px;
+  color: white; /* 텍스트 색 */
+  font-size: 16px; /* 글자 크기 */
+  cursor: pointer; /* 마우스 커서 변경 */
+}
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+.inputbox {
+  width: 240px;
+  height: 30px;
+  border: none;
+}
+.inputalign {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 300px;
+  height: 35px;
+  border: solid 1px #b2adad;
+  display: flex;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문제 2</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person"
+    />
+    <link rel="stylesheet" href="problem2.css" />
+  </head>
+  <body>
+    <div class="box1">
+      <div class="imgstyle">
+        <img src="logo.jpeg" alt="사진" width="400px" height="165px" />
+      </div>
+      <div class="box2">
+        <form onsubmit="return false;">
+          <input type="checkbox" id="term1" class="terms-checkbox" />
+          <strong style="color: green">[필수]</strong>
+          <strong style="color: white">가입약관</strong>
+        </form>
+      </div>
+      <div class="information">
+        <div class="box3">
+          GDG 서비스를 이용하시거나 서비스 회원으로 가입하실 경우 여러분은 본
+          약관 및 관련 운영 정책을 확인하시거나 동의하게 되므로, 잠시 시간을
+          내시어 주의 깊게 살펴봐 주시기 바랍니다.
+        </div>
+      </div>
+      <div class="box2">
+        <input type="checkbox" id="term2" class="terms-checkbox" />
+        <strong style="color: green">[필수]</strong>
+        <strong style="color: white">가입약관</strong>
+      </div>
+      <div class="information">
+        <div class="box4">
+          실명 인증된 아이디로 가입, 위치기반서비스 이용약관, 이벤트, 혜택 정보
+          수신 동의를 포함합니다.
+        </div>
+      </div>
+      <div class="loginstyle3">
+        <button id="button" type="button" disabled>로그인</button>
+      </div>
+    </div>
+
+    <script>
+      const term1Checkbox = document.getElementById("term1");
+      const term2Checkbox = document.getElementById("term2");
+      const loginButton = document.getElementById("button");
+
+      function updateButtonState() {
+        // 두 체크박스가 모두 체크되어야 버튼 활성화
+        if (term1Checkbox.checked && term2Checkbox.checked) {
+          loginButton.classList.add("active");
+          loginButton.disabled = false;
+          loginButton.style.backgroundColor = "#03c75a"; // 체크박스가 둘 다 눌렸을 때 로그인 버튼을 초록색으로 활성화 시킨다.
+        } else {
+          loginButton.classList.remove("active");
+          loginButton.disabled = true;
+          loginButton.style.backgroundColor = ""; // 둘 다 둘리지 않는다면 기존색으로 다시 돌아오기
+        }
+      }
+
+      term1Checkbox.addEventListener("change", updateButtonState);
+      term2Checkbox.addEventListener("change", updateButtonState);
+
+      loginButton.addEventListener("click", function () {
+        // 로그인 버튼 클릭 시 success.html로 이동
+        window.location.href = "success.html";
+      });
+    </script>
+  </body>
+</html>

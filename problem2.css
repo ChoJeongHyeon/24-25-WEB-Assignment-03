@@ -1,0 +1,63 @@
+body {
+  background-color: #585858;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0;
+}
+.box1 {
+  width: 400px;
+  height: 500px;
+  border: solid 1px #000000;
+  background-color: #585858;
+  border: solid 1px white;
+  margin-top: 300px;
+}
+.box2 {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.information {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.box3 {
+  padding: 5px;
+  border: solid 1px white;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: white;
+}
+.box4 {
+  padding: 5px;
+  border: solid 1px white;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+.information2 {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.loginstyle3 {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+#button {
+  width: 350px;
+  height: 30px;
+  background-color: 03c75a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer; /* 마우스 커서 변경 */
+}

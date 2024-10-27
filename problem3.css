@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #585858;
+  flex-direction: column;
+}
+.login {
+  position: absolute; /* 절대 위치로 설정 */
+  top: 20px; /* 상단에서 20px 떨어지게 설정 */
+  right: 20px; /* 오른쪽에서 20px 떨어지게 설정 */
+  color: white;
+  display: flex;
+  width: auto; /* 자동 너비 */
+}
+.hr_login {
+  width: 100vw;
+  color: white;
+  position: absolute; /* 절대 위치로 설정 */
+  margin-top: -650px;
+}
+.box {
+  width: 400px;
+  height: 600px;
+  border: solid 1px #000000;
+  background-color: white;
+  display: none;
+}
+.inputbox {
+  width: 240px;
+  height: 30px;
+  border: none;
+}
+.inputalign {
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 50px;
+  width: 300px;
+  height: 35px;
+  border: solid 1px #b2adad;
+  display: flex;
+}
+
+.buttonstyle1 {
+  margin-top: -10px;
+  margin-left: 50px;
+  height: 45px;
+  width: 180px;
+  background-color: rgb(48, 167, 48);
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+}
+.buttonstyle2 {
+  margin-top: -10px;
+  margin-left: 20px;
+  height: 45px;
+  width: 100px;
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+}
+.warning {
+  color: red;
+  height: 100px;
+  margin-left: 50px;
+  max-height: 100px; /* 최대 높이 설정 */
+  overflow-y: auto; /* 세로 스크롤 활성화 */
+}
